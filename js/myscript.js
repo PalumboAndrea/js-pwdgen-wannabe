@@ -1,9 +1,12 @@
 console.log ("Ciao");
 
-let nomeUtente = prompt ("Inserie nome utente");
+const nomeUtente = prompt("Inserie nome utente");
 
-let cognomeUtente = prompt ("Inserie cognome utente");
+const cognomeUtente = prompt("Inserie cognome utente");
 
-let colorePreferito = prompt ("Inserie il colore preferito dell'utente");
+const colorePreferito = prompt("Inserie il colore preferito dell'utente");
 
-document.getElementById('users-info') .innerHTML = nomeUtente + '' + cognomeUtente + '' + colorePreferito + ' 22'
+const insecurePassword = nomeUtente + cognomeUtente + colorePreferito + 22;
+
+console.log(insecurePassword);
+document.getElementById('info').innerHTML = insecurePassword;
